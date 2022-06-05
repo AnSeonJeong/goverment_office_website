@@ -24,11 +24,22 @@ html {
 button {
   border: none;
   background: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+.shadow {
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .wrap {
   max-width: 1200px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .clear::after {
@@ -114,15 +125,22 @@ button {
 
 #main {
   background-color: var(--bg1-color);
+  position: relative;
+  z-index: 5;
 }
 
 /* section1 */
+.section1_wrap {
+  padding: 51px 44px;
+}
+
 .main_banner {
   width: 742px;
   height: 395px;
   float: left;
   border-radius: 30px;
   overflow: hidden;
+  margin-right: 24px;
 }
 
 .main_banner .banner_wrap {
@@ -137,24 +155,40 @@ button {
 }
 
 .mayor_box {
-  width: 345px;
-  height: 395px;
   position: relative;
   background-color: var(--white-color);
-  border-radius: 30px 30px 0 0;
+  border-radius: 30px;
+}
+
+.mayor_box .text {
+  position: absolute;
+  top: 26px;
+  left: 39px;
+}
+
+.mayor_box .text h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.mayor_box .text h2 span:first-child {
+  color: var(--main-color);
+}
+
+.mayor_box .text p {
+  margin-top: 18px;
+}
+
+.mayor_box .text p img {
+  position: relative;
+  top: 10px;
 }
 
 .mayor_box > img {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: block;
 }
 
 .mayor_box .quick {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   height: 63px;
   background-color: var(--main-color);
   border-radius: 0 0 30px 30px;
@@ -164,13 +198,105 @@ button {
   line-height: 63px;
   color: var(--white-color);
   font-size: 18px;
+  padding: 0 22px;
+  cursor: pointer;
+}
+
+.mayor_box .quick span:not(:last-child) {
+  border-right: 1px solid var(--white-color);
+}
+
+.mayor_btn {
+  position: absolute;
+  bottom: 100px;
+  left: 34px;
+}
+
+.mayor_btn button {
+  background-color: var(--sub2-color);
+  color: var(--white-color);
+  font-size: 14px;
+  font-weight: 300;
+  padding: 10px 9px;
+}
+
+.mayor_btn button:first-child {
+  margin-right: 34px;
 }
 
 /* section2 */
+#main_section2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 380px;
+  background-color: var(--bg2-color);
+  position: absolute;
+  top: 722px;
+  z-index: -1;
+}
+
+.section2_wrap {
+  padding: 0 44px;
+}
+
 .latest_box {
   background-color: var(--white-color);
-  padding: 29px;
+  padding: 40px 29px;
   border-radius: 30px;
+  margin-right: 24px;
+  width: 504px;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.latest_tab li h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  position: absolute;
+  top: 40px;
+  cursor: pointer;
+}
+
+.latest_tab li:nth-child(2) h3 {
+  left: 140px;
+}
+
+.latest_tab li:nth-child(3) h3 {
+  left: 240px;
+}
+
+.latest_tab li:nth-child(4) h3 {
+  left: 340px;
+}
+
+.latest_tab li h3:hover {
+  color: var(--sub1-color);
+}
+
+.latest_tab li ul {
+  margin-top: 55px;
+  padding-top: 35px;
+  border-top: 1px solid #aaaaaa;
+}
+
+.latest_tab li ul li {
+  line-height: 36px;
+}
+
+.latest_tab li ul li span {
+  font-weight: 500;
+  float: right;
+}
+
+.latest_tab .plus img {
+  position: absolute;
+  top: 40px;
+  right: 30px;
 }
 
 .news {
@@ -207,6 +333,7 @@ button {
 
 .news_con span:not(:first-child) {
   font-size: 14px;
+  line-height: 1.2;
 }
 
 .news_con span:first-child {
@@ -218,23 +345,37 @@ button {
 }
 
 /* section3 */
+#main_section3 {
+  padding: 51px 0 55px 0;
+}
+
+.section3_wrap {
+  padding: 0 44px;
+}
+
 #main_section3 button {
   width: 18px;
   height: 34px;
+  display: inline-block;
+  position: relative;
+  bottom: 48px;
 }
 
 #main_section3 .prev {
   background: url("../images/menu_prev.png") no-repeat center/cover;
+  margin-right: 35.9px;
 }
 
 #main_section3 .next {
   background: url("../images/menu_next.png") no-repeat center/cover;
+  margin-left: 35.9px;
 }
 
 .popular_menu_wrap {
   width: 997px;
   overflow: hidden;
   margin: 0 auto;
+  display: inline-block;
 }
 
 .popular_menu {
@@ -256,6 +397,7 @@ button {
 
 .popular_menu li img {
   padding: 0 19px;
+  cursor: pointer;
 }
 
 .popular_menu li span {
@@ -271,12 +413,20 @@ button {
   background-color: var(--bg2-color);
 }
 
+.section5_wrap {
+  padding: 0 44px;
+}
+
 #main_section5 h2 {
   padding: 69px 0 51px 0;
 }
 
 #main_section5 h2 span:nth-child(2) {
   color: var(--main-color);
+}
+
+.media_box {
+  margin-left: 11px;
 }
 
 .media_box h2 span:not(:last-child) {
@@ -346,6 +496,7 @@ button {
 .total_banner .btn_box button:not(:nth-child(2)) {
   width: 7px;
   height: 13px;
+  padding: 0;
 }
 
 .total_banner .btn_box .prev {
