@@ -8,6 +8,7 @@
     <title>광주광역시청</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -75,6 +76,12 @@
                             </a>
                         </li>
                     </ul>
+                    <div class="ctrl">
+                        <button class="prev"></button>
+                        <button class="pause"></button>
+                        <button class="next"></button>
+                        <span>1 / 3</span>
+                    </div>
                 </div>
                 <div class="mayor_box left shadow">
                     <div class="text">
@@ -296,7 +303,194 @@
                 <button class="next"></button>
             </div>
         </section>
-        <section id="main_section4"></section>
+        <section id="main_section4">
+            <div class="wrap section4_wrap">
+                <div class="info_box_wrap shadow">
+                    <div class="info_box clear">
+                        <h3 class="selected">사용자별 정보</h3>
+                        <div class=" info">
+                            <div class="info_btn">
+                                <button class="selected">시민</button>
+                                <button>기업</button>
+                                <button>관광</button>
+                            </div>
+                            <ul class="citizen">
+                                <li>
+                                    <a href="#">자치법규</a>
+                                </li>
+                                <li>
+                                    <a href="#">아이낳아 키우기 좋은 광주만들기</a>
+                                </li>
+                                <li>
+                                    <a href="#">광주상생카드</a>
+                                </li>
+                                <li>
+                                    <a href="#">실시간 도로교통정보</a>
+                                </li>
+                                <li>
+                                    <a href="#">재정공시</a>
+                                </li>
+                                <li>
+                                    <a href="#">광주복지플랫폼</a>
+                                </li>
+                                <li>
+                                    <a href="#">사회복지시설</a>
+                                </li>
+                                <li>
+                                    <a href="#">우리동네 온실가스정보센터</a>
+                                </li>
+                                <li>
+                                    <a href="#">바로예약</a>
+                                </li>
+                                <li>
+                                    <a href="#">국민신문고</a>
+                                </li>
+                                <li>
+                                    <a href="#">정부24</a>
+                                </li>
+                                <li>
+                                    <a href="#">안전신문고</a>
+                                </li>
+                                <li>
+                                    <a href="#">정보공개청구</a>
+                                </li>
+                                <li>
+                                    <a href="#">유실물통합포털</a>
+                                </li>
+                                <li>
+                                    <a href="#">광주일자리종합센터</a>
+                                </li>
+                                <li>
+                                    <a href="#">광주시민사이버학습센터(시사점) </a>
+                                </li>
+                            </ul>
+                            <ul class="company hidden">
+                                <li>
+                                    <a href="#">입찰소식</a>
+                                </li>
+                                <li>
+                                    <a href="#">기업애로제로 One_Stop서비스</a>
+                                </li>
+                                <li>
+                                    <a href="#">중소기업지원 메뉴얼</a>
+                                </li>
+                                <li>
+                                    <a href="#">경제동향</a>
+                                </li>
+                                <li>
+                                    <a href="#">경기종합지수</a>
+                                </li>
+                                <li>
+                                    <a href="#">물가동향</a>
+                                </li>
+                                <li>
+                                    <a href="#">광주·전남공동혁신도시 빛가람</a>
+                                </li>
+                                <li>
+                                    <a href="#">투자환경</a>
+                                </li>
+                                <li>
+                                    <a href="#">경제애로해소신고</a>
+                                </li>
+                                <li>
+                                    <a href="#">마을세무사</a>
+                                </li>
+                                <li>
+                                    <a href="#">산업경제동향</a>
+                                </li>
+                                <li>
+                                    <a href="#">광주형일자리</a>
+                                </li>
+                                <li>
+                                    <a href="#">지방세 위텍스</a>
+                                </li>
+                                <li>
+                                    <a href="#">소비자법령</a>
+                                </li>
+                            </ul>
+                            <ul class="sightseeing hidden">
+                                <li>
+                                    <a href="#">광주 추천여행지</a>
+                                </li>
+                                <li>
+                                    <a href="#">여행자플랫폼</a>
+                                </li>
+                                <li>
+                                    <a href="#">문화시설지도</a>
+                                </li>
+                                <li>
+                                    <a href="#">광주 관광 VR</a>
+                                </li>
+                                <li>
+                                    <a href="#">문화유산탐방</a>
+                                </li>
+                                <li>
+                                    <a href="#">웰니스 의료 관광</a>
+                                </li>
+                                <li>
+                                    <a href="#">공연일정</a>
+                                </li>
+                                <li>
+                                    <a href="#">문화관광해설사</a>
+                                </li>
+                                <li>
+                                    <a href="#">관광안내소</a>
+                                </li>
+                                <li>
+                                    <a href="#">시티투어버스</a>
+                                </li>
+                                <li>
+                                    <a href="#">1330 관광안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">관광홍보물신청</a>
+                                </li>
+                                <li>
+                                    <a href="#">남도패스</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info_box clear">
+                        <h3>분야별 정보</h3>
+                        <div class="info hidden">
+                            <ul>
+                                <li>
+                                    <a href="#">교통</a>
+                                </li>
+                                <li>
+                                    <a href="#">도시·건설</a>
+                                </li>
+                                <li>
+                                    <a href="#">산업·경제</a>
+                                </li>
+                                <li>
+                                    <a href="#">복지·건강</a>
+                                </li>
+                                <li>
+                                    <a href="#">재난·안전</a>
+                                </li>
+                                <li>
+                                    <a href="#">재정·세정</a>
+                                </li>
+                                <li>
+                                    <a href="#">행정·감사·기타</a>
+                                </li>
+                                <li>
+                                    <a href="#">환경</a>
+                                </li>
+                                <li>
+                                    <a href="#">농업</a>
+                                </li>
+                                <li>
+                                    <a href="#">5.18</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="main_section5" class="clear">
             <div class="wrap section5_wrap clear">
                 <div class="media_box left">
@@ -375,140 +569,212 @@
         <div class="total_banner">
             <div class="wrap">
                 <h3>광주광역시 배너모음</h3>
-                <div class="btn_box">
+                <!-- <div class="btn_box">
                     <button class="prev"></button>
                     <button class="play"></button>
                     <button class="next"></button>
+                </div> -->
+                <button>전체보기</button>
+                <div class="total_banner_con">
+                    <ul>
+                        <li>
+                            <a href="#">광주평생교육진흥원</a>
+                            <a href="#">유해정보필터링 지원시스템</a>
+                            <a href="#">디어마이광주(광주문화예술통합플랫폼)</a>
+                            <a href="#">GIEL 광주공동브랜드</a>
+                        </li>
+                        <li>
+                            <a href="#">한국전력공사(전기사용예정통지)</a>
+                            <a href="#">도시경관기록</a>
+                            <a href="#">공공체육시설예약</a>
+                            <a href="#">안전Dream 아동ㆍ여성ㆍ장애인 경찰지원센터</a>
+                        </li>
+                        <li>
+                            <a href="#">(재)빛고을장학재단</a>
+                            <a href="#">전국공무원노동조합 광주지역본부 광주시지부</a>
+                            <a href="#">빅데이터 통합플랫폼</a>
+                            <a href="#">광주청년센터</a>
+                        </li>
+                        <li>
+                            <a href="#">정보공개시스템</a>
+                            <a href="#">공유자전거 타랑께</a>
+                            <a href="#">정부24</a>
+                            <a href="#">행정안전부</a>
+                            <a href="#">공공데이터포털</a>
+                            <a href="#">광화문1번가</a>
+                            <a href="#">안전신문고</a>
+                        </li>
+                        <li>
+                            <a href="#">부동산거래질서교란행위 신고센터</a>
+                            <a href="#">국민생각함</a>
+                            <a href="#">토닥토닥</a>
+                            <a href="#">고액상습체납자 명단공개</a>
+                            <a href="#">다잇다</a>
+                        </li>
+                        <li>
+                            <a href="#">생활안전지도</a>
+                            <a href="#">광주광역시 차이나센터</a>
+                            <a href="#">국민재난안전포털</a>
+                            <a href="#">국립아시아문화전당</a>
+                            <a href="#">온라인행정심판</a>
+                        </li>
+                        <li>
+                            <a href="#">국민신문고</a>
+                            <a href="#">청탁금지법 통합검색</a>
+                            <a href="#">상권정보</a>
+                            <a href="#">스마트쉼 센터</a>
+                            <a href="#">스마트 도시분석 포털</a>
+                            <a href="#">효령노인복지타운</a>
+                        </li>
+                        <li>
+                            <a href="#">국가상징알아보기</a>
+                            <a href="#">청소년 노동인권센터</a>
+                            <a href="#">청렴포털</a>
+                            <a href="#">유네스코 미디어아트 창의도시 광주 플랫폼</a>
+                        </li>
+                        <li>
+                            <a href="#">광주광역시 계약365 코너</a>
+                            <a href="#">LOST112</a>
+                            <a href="#">국민안전방송</a>
+                            <a href="#">부동산정보 통합 열람</a>
+                            <a href="#">광주 일자리 종합센터</a>
+                        </li>
+                        <li>
+                            <a href="#">안전디딤돌</a>
+                            <a href="#">광주광역시 정신건강 복지센터</a>
+                            <a href="#">광주트라우마센터</a>
+                            <a href="#">광주광역시 아동청소년의회</a>
+                            <a href="#">120빛고을콜센터</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul>
-                    <li>광주평생교육진흥원</li>
-                    <li>유해정보필터링 지원시스템</li>
-                    <li>디어마이광주(광주문화예술통합플랫폼)</li>
-                    <li>GIEL 광주공동브랜드</li>
-                </ul>
             </div>
         </div>
         <div class="bottom_link">
-            <div class="wrap">
+            <div class="wrap clear">
                 <div class="link_wrap">
-                    <h3>직속기관/사업소</h3>
+                    <a href="#">직속기관/사업소</a>
+                    <button></button>
                     <ul class="link_list">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>빛고을국민안전체험관</li>
+                        <li>시민의숲</li>
+                        <li>소방안전본부</li>
+                        <li>상수도사업본부</li>
+                        <li>공무원교육원</li>
+                        <li>일가정양립지원본부</li>
+                        <li>시립도서관</li>
+                        <li>시립미술관</li>
+                        <li>우치공원관리사무소</li>
+                        <li>광주역사민속박물관</li>
+                        <li>김치타운관리사무소</li>
+                        <li>문화예술회관</li>
+                        <li>5·18민주화운동기록관</li>
+                        <li>서부농수산물도매시장관리사무소</li>
+                        <li>각화동농산물도매시장관리사무소</li>
+                        <li>군공항이전사업본부</li>
+                        <li>광주광역시 도시경관기록</li>
                     </ul>
                 </div>
                 <div class="link_wrap">
-                    <h3>자치구/유관기관</h3>
+                    <a href="#">자치구/유관기관</a>
+                    <button></button>
                     <ul class="link_list">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>광주광역시의회</li>
+                        <li>동구청</li>
+                        <li>서구청</li>
+                        <li>남구청</li>
+                        <li>북구청</li>
+                        <li>광산구청</li>
+                        <li>김대중컨벤션센터</li>
+                        <li>광주관광재단</li>
+                        <li>광주광역시도시공사</li>
+                        <li>광주광역시도시철도공사</li>
+                        <li>광주비엔날레</li>
+                        <li>광주사회복지공동모금회</li>
+                        <li>광주장애인체육회</li>
+                        <li>광주전남연구원</li>
+                        <li>광주정보문화산업진흥원</li>
+                        <li>광주평생교육진흥원</li>
+                        <li>광주광역시체육회</li>
+                        <li>광주환경공단</li>
+                        <li>교통약자이동센터</li>
+                        <li>교통문화연수원</li>
+                        <li>국립5·18민주묘지</li>
+                        <li>빛고을노인건강타운</li>
+                        <li>빛고을시민문화관</li>
+                        <li>수완에너지㈜</li>
+                        <li>한국광산업진흥회</li>
+                        <li>한국생산기술연구원 서남지역본부</li>
+                        <li>(재)빛고을장학재단</li>
+                        <li>(재)광주광역시 사회서비스원</li>
+                        <li>(재)5·18기념재단</li>
+                        <li>(재)국제기후환경센터</li>
+                        <li>(재)과학기술진흥원</li>
+                        <li>(재)광주경제고용진흥원</li>
+                        <li>(재)광주그린카진흥원</li>
+                        <li>(재)광주디자인진흥원</li>
+                        <li>(재)광주문화재단</li>
+                        <li>(재)광주복지연구원</li>
+                        <li>(재)광주신용보증재단</li>
+                        <li>(재)광주여성재단</li>
+                        <li>(재)광주영어방송</li>
+                        <li>(재)광주정보문화진흥원</li>
+                        <li>(재)광주창조경제혁신센터</li>
+                        <li>(재)광주테크노파크</li>
+                        <li>(재)한국학호남진흥원</li>
+                        <li>(사)아시아문화중심도시추진단</li>
+                        <li>(사)광주광역시장애인종합지원센터</li>
                     </ul>
                 </div>
                 <div class="link_wrap">
-                    <h3>중앙부처</h3>
+                    <a href="#">중앙부처</a>
+                    <button></button>
                     <ul class="link_list">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>국무조정실</li>
+                        <li>법제처</li>
+                        <li>국가보훈처</li>
+                        <li>인사혁신처</li>
+                        <li>식품의약품안전처</li>
+                        <li>기획재정부</li>
+                        <li>과학기술정보통신부</li>
+                        <li>교육부</li>
+                        <li>외교부</li>
+                        <li>통일부</li>
+                        <li>법무부</li>
+                        <li>국방부</li>
+                        <li>행정안전부</li>
+                        <li>문화체육관광부</li>
+                        <li>농림축산식품부</li>
+                        <li>산업통상자원부</li>
+                        <li>보건복지부</li>
+                        <li>환경부</li>
+                        <li>고용노동부</li>
+                        <li>여성가족부</li>
+                        <li>국토교통부</li>
+                        <li>해양수산부</li>
+                        <li>중소벤처기업부</li>
                     </ul>
                 </div>
                 <div class="link_wrap">
-                    <h3>타시도</h3>
+                    <a href="#">타시도</a>
+                    <button></button>
                     <ul class="link_list">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>서울특별시</li>
+                        <li>부산광역시</li>
+                        <li>대구광역시</li>
+                        <li>인천광역시</li>
+                        <li>대전광역시</li>
+                        <li>울산광역시</li>
+                        <li>세종특별자치시</li>
+                        <li>경기도</li>
+                        <li>강원도</li>
+                        <li>충청북도</li>
+                        <li>충청남도</li>
+                        <li>전라북도</li>
+                        <li>전라남도</li>
+                        <li>경상북도</li>
+                        <li>경상남도</li>
+                        <li>제주특별자치도</li>
                     </ul>
                 </div>
             </div>
