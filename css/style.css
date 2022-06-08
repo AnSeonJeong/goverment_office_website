@@ -495,7 +495,11 @@ a {
 }
 
 .info_box:last-child .info ul {
-  padding-top: 156px;
+  padding-top: 190px;
+}
+
+.info {
+  height: 441px;
 }
 
 .info ul {
@@ -519,9 +523,52 @@ a {
   font-size: 18px;
 }
 
+.info_btn button:not(:last-child) {
+  margin-right: 20px;
+}
+
 .info_btn button.selected {
   background-color: var(--highlight-color);
   color: var(--white-color);
+}
+
+.info .info_title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 34px;
+  padding-top: 122px;
+}
+
+.info .info_title::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: var(--main-color);
+  position: relative;
+  left: -43px;
+  top: 12px;
+}
+
+.info .info_title::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: var(--main-color);
+  position: relative;
+  right: -112px;
+  top: -10px;
+}
+
+.info .info_title span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.info .info_title span:first-child {
+  color: var(--main-color);
 }
 
 .info ul li {
@@ -696,7 +743,7 @@ a {
 }
 
 .total_banner ul li a:not(:last-child) {
-  margin-right: 44px;
+  margin-right: 43px;
 }
 
 .total_banner button {
