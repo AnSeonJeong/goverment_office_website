@@ -233,7 +233,8 @@ setInterval(doRolling, 2000);
 
 linkWrap.forEach((w) => {
   w.addEventListener("click", (e) => {
-    console.dir(e.target.children[2]);
+    if (e.target.className !== "link_wrap") return;
+
     e.target.children[1].classList.toggle(CLICKED);
     e.target.children[2].classList.toggle(CLICKED);
   });
